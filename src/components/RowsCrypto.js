@@ -20,7 +20,7 @@ export default function RowsCrypto ({ coin, index }) {
             </td>
 
             <td style={{width: '35%'}}>
-                ${coin.usd.toLocaleString()}
+                ${coin.current_price.toLocaleString()}
             </td>
         </tr>
     );
