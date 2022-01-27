@@ -1,6 +1,6 @@
 import React from "react";
 
-const RowsCrypto = ({ coin, index }) => {
+export default function RowsCrypto ({ coin, index }) {
 
     return (
         <tr>
@@ -25,5 +25,3 @@ const RowsCrypto = ({ coin, index }) => {
         </tr>
     );
 };
-
-export default RowsCrypto;

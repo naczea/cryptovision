@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const getCoins = async () => {
     try {
-        const result = await axios.get('http://34.72.242.45:3050/crypto/get')
+        const result = await axios.get('/crypto/get')
         return result.data;
     } catch (err) {
         throw err;
@@ -11,7 +11,7 @@ export const getCoins = async () => {
 
 export const postCoin = async (body) => {
     try {
-        const result = await axios.post('http://34.72.242.45:3050/crypto/post', body)
+        const result = await axios.post('/crypto/post', body)
         return result.data;
     } catch (err) {
         throw err;
