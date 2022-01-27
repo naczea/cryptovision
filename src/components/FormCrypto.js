@@ -1,13 +1,13 @@
 import React from 'react';
 import { Button } from "@material-ui/core";
-import { Send, ArrowBack } from "@material-ui/icons";
+import { Send } from "@material-ui/icons";
 import { postCoin } from '../lib/coins';
 import Message from './Message';
 
 export default function FormCrypto() {
 
     const [name, setName] = React.useState('');
-    const [price, setPrice] = React.useState();
+    const [usd, setUsd] = React.useState();
 
     const [mns, setMns] = React.useState('');
     const [severity, setSeverity] = React.useState('');
@@ -27,12 +27,12 @@ export default function FormCrypto() {
     const sendCoin = async () => {
         let body = {
             name: name,
-            current_price: price
+            usd: usd
         };
-        if(body.name=='' || body.current_price==0 || body.current_price==null){
+        if(body.name=='' || body.usd==0 || body.usd==null){
             handleClick('Complete the information', 'error');
             setName('');
-            setPrice(0);
+            setUsd(0);
         }else{
             try {
                 const result = await postCoin(body);
@@ -42,7 +42,7 @@ export default function FormCrypto() {
                 console.error(err);
             }
             setName('');
-            setPrice(0);
+            setUsd(0);
         }
     }
 
@@ -60,10 +60,10 @@ export default function FormCrypto() {
                     />
                     <input
                         type="number"
-                        placeholder="Coin price $"
+                        placeholder="Coin price usd $"
                         className="form-control bg-dark text-light border-0 mt-4"
-                        value={price}
-                        onChange={e => setPrice(e.target.value)}
+                        value={usd}
+                        onChange={e => setUsd(e.target.value)}
                     />
                 </div>
             </form>
