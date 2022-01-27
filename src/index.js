@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
 
 axios.defaults.baseURL = 'https://cryptovision-api.herokuapp.com/';
+//axios.defaults.baseURL = 'http://localhost:3050/';
 
 ReactDOM.render(
   <React.Fragment>
