@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
 
-axios.defaults.baseURL = 'http://34.72.242.45:3050';
+axios.defaults.baseURL = 'https://cryptovision-api.herokuapp.com/';
 
 ReactDOM.render(
   <React.Fragment>
