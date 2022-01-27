@@ -1,0 +1,26 @@
+@import "sass/main";
+@import "sass/crypto";
+
+.home-api{
+    width: 100%;
+    height: 92.5vh;
+    background-color: #070707fb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .content-api{
+        width: 43%;
+        height: 100%;
+    }
+}
+
+.bg-crypto{
+    width: 58%;
+    height: 100%;
+    background-image: url(../src/img/world.gif);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: 50% 50%;
+}
+
