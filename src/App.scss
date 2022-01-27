@@ -1,5 +1,10 @@
 @import "sass/main";
 @import "sass/crypto";
+@import "sass/newcrypto";
+
+html {
+    scroll-behavior: smooth;
+  }
 
 .home-api{
     width: 100%;
@@ -22,5 +27,15 @@
     background-repeat: no-repeat;
     background-size: 65%;
     background-position: 50% 50%;
+}
+
+.actions_btn {
+    border-radius: 45px;
+    text-transform: none;
+    color: white;
+    padding: 8px 16px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid white;
 }
 

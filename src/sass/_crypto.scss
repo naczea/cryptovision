@@ -9,5 +9,65 @@
     .content-api{
         width: 43%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            color: white;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+        .input-crypto{
+            width: 80%;
+            margin-bottom: 3%;
+        }
+        .list-crypto{
+            width: 80%;
+            height: 50%;
+            overflow: auto;
+            background-color: #1b2024;
+        }
+        .list-crypto::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+        
+        .list-crypto::-webkit-scrollbar:vertical {
+            width:10px;
+        }
+        
+        .list-crypto::-webkit-scrollbar-button:increment,.list-crypto::-webkit-scrollbar-button {
+            display: none;
+        } 
+        
+        .list-crypto::-webkit-scrollbar:horizontal {
+            height: 10px;
+        }
+        
+        .list-crypto::-webkit-scrollbar-thumb {
+            background-color: #5e5b5b;
+            border-radius: 20px;
+        }
+        
+        .list-crypto::-webkit-scrollbar-track {
+            border-radius: 10px;  
+        }
+        .btn-content{
+            width: 50%;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        .add-btn {
+            border-radius: 45px;
+            text-transform: none;
+            color: white;
+            padding: 8px 16px;
+            font-size: 17px;
+            font-weight: 500;
+            border: 1px solid white;
+        }
     }
 }
